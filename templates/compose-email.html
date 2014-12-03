@@ -1,30 +1,43 @@
-<form method="post" name="compose">
-	<fieldset class="row">
-		<legend>Recipient Email</legend>
-		<input type="text" name="recipient"/>
-	</fieldset>
+<section class="row" id="composeWindow">
+	<div class="grid-6">&nbsp;</div>
+	<div class="grid-6">
 
-	<fieldset class="row">
-		<legend>Your Name</legend>
-		<input type="text" name="senderName"/>
-	</fieldset>
+		<form method="post" name="compose">
+			<fieldset class="row">
+				<label for="recipient" class="grid-3">To</label>
+				<div class="grid-9">
+					<input type="email" name="recipient" placeholder="yourfriend@example.com"/>
+				</div>
+			</fieldset>
 
-	<fieldset class="row">
-		<legend> Message </legend> 
-		<textarea name="senderBody"></textarea>
-	</fieldset>
+			<fieldset class="row">
+				<label for="senderName" class="grid-3">Your Name</label>
+				<div class="grid-9">
+					<input type="text" name="senderName"/>
+				</div>
+			</fieldset>
 
-	<fieldset class="row">
-		<legend> Password </legend>
-		<input type="password" name="pass"/>
-	</fieldset>
+			<fieldset class="row">
+				<textarea name="senderBody" placeholder="Your message"></textarea>
+			</fieldset>
 
-	<fieldset class="row">
-		<legend> Password Hint <em>(Optional)</em> </legend>
-		<input type="text" name="passHint"/>
-	</fieldset>
+			<fieldset class="row">
+				<label for="passHint" class="grid-3">Secret Question</label>
+				<div class="grid-9">
+					<input type="text" name="passHint" placeholder="E.g. What is our mutual friend's name?"/>
+				</div>
+			</fieldset>
 
-	<fieldset class="text-right">
-		<a href="javascript:document.compose.submit();" class="formButton">Send</a>
-	</fieldset> 
-</form>
+			<fieldset class="row">
+				<label for="pass" class="grid-3">Secret Answer</label>
+				<div class="grid-9">
+					<input type="text" name="pass" placeholder="Info to help guess the friend's name"/>
+				</div>
+			</fieldset>
+
+			<fieldset class="text-right">
+				<a href="javascript:document.compose.submit();" class="call-to-action-inline formButton">Send</a>
+			</fieldset> 
+		</form>
+	</div>
+</section>

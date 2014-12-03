@@ -1,0 +1,29 @@
+.call-to-action {
+  opacity: 1;
+  font-family: 'Rock Salt', cursive;
+  color: #fcf;
+  background-color: $color-blue;
+  border-radius: 1.5em 2em;
+  padding: .5em 1em;
+  box-shadow: .05em .05em .05em .05em;
+  @include transition(all ease .5s);
+}
+
+.call-to-action-large {
+  @extend .call-to-action;
+  font-size: 1.75em;
+  position: relative;
+  top: 6em;
+}
+
+.call-to-action-inline {
+  @extend .call-to-action;
+  font-size: 1.25em;
+  margin: .5em 0;
+  display: inline-block;
+}
+
+.call-to-action:hover {
+  color: #fff;
+  box-shadow: .1em .1em .05em .05em;
+}

@@ -11,7 +11,7 @@ $grid-col-gutter-width: 1.5%;
   display: block;
   float: left; 
   @include box-sizing(border-box); 
-  padding: $grid-col-gutter-width 0;
+  padding: 0 $grid-col-gutter-width;
 }
 
 @mixin grid-fluid-width ($columns) {

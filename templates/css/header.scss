@@ -1,13 +1,46 @@
-$app-title-font-size: 2em; 
+$app-title-font-size: 3em; 
 
 h1, .logo {
 	display: inline-block;
 }
 
+header {
+  text-align: center;
+}
+
 h1 {
+  position: relative;
   font-size: $app-title-font-size; 
+  font-family: 'Rock Salt', cursive;
+  color: $color-blue;
+  margin-bottom: 0;
+}
+
+h1::before {
+  position: absolute;
+  content: '';
+  display: inline-block;
+  height: $app-title-font-size * .25;
+  width: $app-title-font-size * .25;
+  left: -.75em;
+  top: .5em;
+
+  background: url(../images/message.png) no-repeat;
+  background-size: cover; 
+}
+
+h2 {
+  color: #555;
+  font-size: .8em;
+  line-height: 150%; 
+  display: block;
+  margin: 0 auto;
+  margin-top: -1em;
+  width: auto;
+  max-width: 15em;
+  font-family: 'Open Sans', sans-serif;
 }
 
 .logo {
-  max-height: $app-title-font-size * .75;
+  max-height: $app-title-font-size * .85;
 }

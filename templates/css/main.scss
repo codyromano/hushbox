@@ -1,7 +1,38 @@
+$color-blue: #366DB9;
+
+@import url(http://fonts.googleapis.com/css?family=Rock+Salt|Open+Sans);
+@import 'normalize';
 @import 'vendor-prefixes';
 @import 'grid';
 @import 'header';
 @import 'forms';
+@import 'animation';
+@import 'composeWindow';
+@import 'callToAction';
+
+body, html, #intro {
+  height: 100%; 
+  background-color: #fff;
+}
+
+a {
+  text-decoration: none;
+}
+
+#intro {
+  height: 100%;
+  background: url(../images/background.jpg) no-repeat #111;
+  background-size: cover;
+  background-position: bottom;
+  @include transition(opacity ease .5s);
+  z-index: 2; 
+  position: relative;
+  box-shadow: .05em .3em .15em .05em #999;
+}
+
+a, label, button, legend {
+  font-family: 'Open Sans', sans-serif;
+}
 
 .text-right {
   text-align: right; 

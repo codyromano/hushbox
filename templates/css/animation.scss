@@ -1,0 +1,42 @@
+.fade-out {
+	opacity: 0 !important;
+}
+
+#intro.slide-left {   
+    position: relative;
+    left: 0%;
+
+    -webkit-animation-name: slideOut;
+    -webkit-animation-iteration-count: once;
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-duration: 1.5s;   
+    animation-name: slideOut;
+    animation-iteration-count: once;
+    animation-timing-function: ease-out;
+    animation-duration: 1.5s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slideOut {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+       left: -60%;
+    }
+}
+
+@-webkit-keyframes slideOut {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+       left: -60%;
+    }
+}
+
+#intro.background-loaded {
+  opacity: 1;
+}
+

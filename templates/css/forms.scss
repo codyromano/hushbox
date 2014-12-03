@@ -1,12 +1,32 @@
+form {
+	margin-top: 2.5rem;
+}
+
+input, select, textarea {
+	width: 100%;
+	font-size: 1.15rem;
+	border: solid #ccc .1rem;
+	border-top-color: transparent;
+	border-right-color: transparent;
+	background: #fff;
+	@include box-sizing(border-box);
+	padding: .5em;
+}
+
+textarea {
+	height: 20rem;
+	line-height: 150%;
+}
+
+legend, label {
+	color: $color-blue; 
+}
+
+label {
+	position: relative;
+	top: .5em;
+}
+
 fieldset {
 	border: none;
-
-	input, select, textarea {
-		width: 100%; 
-		font-size: 1.25rem;
-	}
-
-	legend, label {
-		font-weight: bold; 
-	}
 }

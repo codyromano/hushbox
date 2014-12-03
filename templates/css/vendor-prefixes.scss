@@ -3,3 +3,9 @@
   -webkit-box-sizing: $setting;
   -moz-box-sizing: $setting;
 }
+
+@mixin transition ($setting) {
+	transition: $setting;
+	-webkit-transition: $setting;
+	-moz-transition: $setting;
+}
