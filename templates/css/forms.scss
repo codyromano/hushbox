@@ -1,0 +1,12 @@
+fieldset {
+	border: none;
+
+	input, select, textarea {
+		width: 100%; 
+		font-size: 1.25rem;
+	}
+
+	legend, label {
+		font-weight: bold; 
+	}
+}

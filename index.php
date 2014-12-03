@@ -54,69 +54,15 @@ if (!empty($_POST)) {
 	}
 
 }
-?>
 
+include 'templates/heading.html';
 
-<?php
 if (isset($messageSent)) {
-	exit("Message sent successfully!<br/><br/> <a href='index.php' class='formButton'>Send another</a> ");
+	echo "Message sent successfully!<br/><br/> <a href='index.php' class='formButton'>Send another</a> ";
+} else {
+	include 'templates/compose-email.html';
 }
+
+include 'templates/footing.html';
+
 ?>
-
-<form method="post" id="send" name="compose">
-	<table>
-		<tr>
-			<td>
-				<fieldset>
-					<legend> Recipient Email </legend>
-					<input type="text" name="recipient"/>
-				</fieldset>
-			</td>
-			<td>
-			<fieldset>
-				<legend> Your Name </legend>
-				<input type="text" name="senderName"/>
-			</fieldset>
-			</td>
-		</tr>
-	</table>
-
-	<fieldset>
-		<legend> Message </legend> 
-		<textarea name="senderBody"></textarea>
-	</fieldset>
-
-	<table>
-		<tr>
-			<td>
-				<fieldset>
-					<legend> Password </legend>
-					<input type="password" name="pass"/>
-				</fieldset>
-			</td>
-			<td>
-				<fieldset>
-					<legend> Password Hint <em>(Optional)</em> </legend>
-					<input type="text" name="passHint"/>
-				</fieldset>
-			</td>
-		</tr>
-	</table>
-	<fieldset style="text-align:right;">
-
-<a href="javascript:document.compose.submit();" class="formButton">Send</a>
-</fieldset> 
-
-</form>
-
-<br/>
-<small style="color:#555;"> Concept & coding by <a href="http://www.codyromano.com">Cody Romano.</a> &copy; 2013 </small>
-<br/><br/> 
-
-
-
-
-
-
-</body>
-</html>

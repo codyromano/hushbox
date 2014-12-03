@@ -1,0 +1,30 @@
+<form method="post" name="compose">
+	<fieldset class="row">
+		<legend>Recipient Email</legend>
+		<input type="text" name="recipient"/>
+	</fieldset>
+
+	<fieldset class="row">
+		<legend>Your Name</legend>
+		<input type="text" name="senderName"/>
+	</fieldset>
+
+	<fieldset class="row">
+		<legend> Message </legend> 
+		<textarea name="senderBody"></textarea>
+	</fieldset>
+
+	<fieldset class="row">
+		<legend> Password </legend>
+		<input type="password" name="pass"/>
+	</fieldset>
+
+	<fieldset class="row">
+		<legend> Password Hint <em>(Optional)</em> </legend>
+		<input type="text" name="passHint"/>
+	</fieldset>
+
+	<fieldset class="text-right">
+		<a href="javascript:document.compose.submit();" class="formButton">Send</a>
+	</fieldset> 
+</form>

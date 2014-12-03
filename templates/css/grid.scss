@@ -1,0 +1,23 @@
+$grid-cols: 12;
+$grid-col-gutter-width: 1.5%;
+
+.row::before, .row::after {
+	content: '';
+	display: table;
+	clear: both; 
+}
+
+.generic-col {
+  display: block;
+  float: left; 
+  @include box-sizing(border-box); 
+  padding: $grid-col-gutter-width 0;
+}
+
+@mixin grid-fluid-width ($columns) {
+	width: 100% * ($columns / $grid-cols);
+}
+
+@for $i from 1 through $grid-cols {
+  .grid-#{$i} { @include grid-fluid-width($i); @extend .generic-col; }
+}

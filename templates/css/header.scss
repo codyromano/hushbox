@@ -1,0 +1,13 @@
+$app-title-font-size: 2em; 
+
+h1, .logo {
+	display: inline-block;
+}
+
+h1 {
+  font-size: $app-title-font-size; 
+}
+
+.logo {
+  max-height: $app-title-font-size * .75;
+}

@@ -1,0 +1,5 @@
+@mixin box-sizing ($setting) {
+  box-sizing: $setting;
+  -webkit-box-sizing: $setting;
+  -moz-box-sizing: $setting;
+}
